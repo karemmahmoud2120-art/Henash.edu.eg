@@ -1,0 +1,37 @@
+.admin-setup-page { min-height: 100vh; padding: 20px 24px; display: flex; flex-direction: column; align-items: center; color: #254336; background: radial-gradient(ellipse at 100% 0%, rgba(222,234,219,.7), transparent 36%), #f7f7f1; font-family: Tahoma, Arial, sans-serif; }
+.setup-header { width: min(980px, 100%); min-height: 64px; margin-bottom: 27px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.setup-header > a:last-child { display: inline-flex; align-items: center; gap: 7px; color: #728174; font-size: 9px; transition: color .2s; }
+.setup-header > a:last-child:hover { color: #345941; }
+.setup-header .brand { transform: scale(.92); transform-origin: right center; }
+.setup-card { width: min(465px, 100%); margin: auto; padding: 28px 33px 25px; border: 1px solid #e6e9df; border-radius: 11px; background: rgba(255,254,250,.96); box-shadow: 0 17px 48px rgba(45,67,47,.08); }
+.setup-icon { width: 49px; height: 49px; margin-bottom: 16px; border: 1px solid #e3e9dd; border-radius: 14px; display: grid; place-items: center; color: #5a785e; background: #eef2e9; }
+.setup-eyebrow { display: inline-flex; align-items: center; gap: 8px; color: #859084; font-size: 8px; }
+.setup-eyebrow i { width: 6px; height: 6px; border-radius: 50%; background: #c59062; box-shadow: 0 0 0 4px rgba(197,144,98,.12); }
+.setup-card h1 { margin: 10px 0 7px; color: #2c4a38; font-size: 25px; letter-spacing: -.7px; }
+.setup-card h1 em { color: #8da18a; font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+.setup-card > p { margin: 0; color: #869188; font-size: 9px; line-height: 1.95; }
+.setup-card code { direction: ltr; padding: 2px 5px; border-radius: 3px; color: #4d6c52; background: #eff2ea; font-size: 9px; }
+.setup-form { margin-top: 18px; display: grid; gap: 11px; }
+.setup-form label { display: flex; flex-direction: column; gap: 6px; color: #556b57; font-size: 8px; font-weight: 700; }
+.setup-form input { width: 100%; min-height: 39px; padding: 0 10px; border: 1px solid #e3e8df; border-radius: 5px; color: #304b38; outline: none; background: #fffefa; font-family: Tahoma, Arial, sans-serif; font-size: 9px; font-weight: 400; transition: border .2s, box-shadow .2s; }
+.setup-form input:focus { border-color: #88a18b; box-shadow: 0 0 0 3px rgba(92,133,95,.1); }
+.setup-form input::placeholder { color: #a7b0a7; }
+.setup-form label > small { color: #959f95; font-size: 7px; font-weight: 400; }
+.setup-error { margin: 0; padding: 8px 10px; border: 1px solid #f0ddd5; border-radius: 4px; color: #975548; background: #fdf5f1; font-size: 8px; line-height: 1.8; }
+.setup-submit { width: 100%; min-height: 42px; margin-top: 2px; padding: 0 13px; border: 0; border-radius: 5px; display: flex; align-items: center; justify-content: center; gap: 9px; color: #fffef7; background: #3d684c; font-family: inherit; font-size: 9px; font-weight: 700; cursor: pointer; transition: .2s; }
+.setup-submit:hover:not(:disabled) { background: #2b5038; transform: translateY(-1px); }
+.setup-submit:disabled { cursor: wait; opacity: .72; }
+.setup-submit span { font-size: 14px; }
+.setup-link-button { text-decoration: none; }
+.setup-closed-notice { margin-top: 17px; padding: 12px; border: 1px solid #e7ece1; border-radius: 6px; display: flex; align-items: flex-start; gap: 9px; color: #758576; background: #f4f6ef; font-size: 8px; line-height: 1.9; }
+.setup-closed-notice svg { flex: none; width: 17px; height: 17px; color: #67846b; }
+.setup-secondary-link { margin-top: 17px; display: inline-flex; color: #57755c; font-size: 9px; font-weight: 700; text-decoration: underline; text-decoration-color: #d3dfd2; text-underline-offset: 4px; }
+.setup-footer-note { margin-top: 14px !important; display: flex; align-items: flex-start; gap: 6px; color: #9aa398 !important; font-size: 7px !important; }
+.setup-footer-note svg { flex: none; width: 13px; height: 13px; color: #739075; }
+.setup-site-footer { width: min(980px, 100%); min-height: 33px; display: flex; align-items: center; justify-content: center; color: #a0a79d; font-size: 7px; }
+@media (max-width: 480px) {
+  .admin-setup-page { padding: 12px 15px; }
+  .setup-header { min-height: 55px; margin-bottom: 14px; }
+  .setup-card { padding: 23px 19px 21px; }
+  .setup-card h1 { font-size: 22px; }
+}
